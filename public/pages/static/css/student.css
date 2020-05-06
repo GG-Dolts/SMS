@@ -1,0 +1,22 @@
+.back{
+    position: absolute;
+    right: 0;
+}
+
+#class-edit, #course-view, #course-edit, #course-add, #room-edit, #student-view{
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    border: solid 1px;
+    border-color: #ece3e3;
+    border-radius: 12px;
+    width: 50%;
+    top: 10%;
+    margin-left: 20%;
+    background-color: #FFFFFF;
+}
+
+form{
+    width: 90%;
+}
+

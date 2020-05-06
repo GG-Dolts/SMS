@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manager</title>
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/base.css" rel="stylesheet">
+</head>
+<body>
+<!--user-->
+<div id='user'>
+    <p>SMS</p>
+    <div id="avatar">
+        <img src="../static/image/img5.jpeg">
+    </div>
+    <div id="user-handle">
+        <ul>
+            <li><a target="main">修改密码</a></li>
+            <li><a target="main">更换头像</a></li>
+            <li><a href="../index/login.html" id="logout">
+                <span class="glyphicon glyphicon-log-out"></span>退出
+            </a></li>
+        </ul>
+    </div>
+</div>
+<!--navigation-->
+<div id='nav'>
+    <ul>
+        <li><a href="info.html" target="main">个人信息</a></li>
+        <li><a href="course.html" target="main">课程信息</a></li>
+    </ul>
+</div>
+<!--content-->
+<div id='content'>
+    <iframe name="main" src="info.html">
+
+    </iframe>
+</div>
+
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/base.js"></script>
+<script src="../static/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+	text-align: center;
+	background-color: #fafbfa;
+}
+
+h2{
+	width: 100%;
+}
+
+#detail{
+	margin: 0 auto;
+	padding-top: 30px;
+	width: 55%;
+}
+
+th{
+	text-align: center;
+	letter-spacing: 2px;
+}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>课程管理</title>
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/manage.css" rel="stylesheet">
+    <link href="../static/css/common.css" rel="stylesheet">
+    <link href="../static/css/teacher/course.css" rel="stylesheet">
+</head>
+<body>
+<!--head-->
+<div id="head">
+    <h2>课程管理</h2>
+    <div class="input-group" id="search">
+        <input type="text" class="form-control" placeholder="请输入">
+        <span class="input-group-btn"><button type="submit" class="btn btn-primary">查找</button></span>
+    </div>
+    <div id="handle">
+        <button type="button" class="btn btn-info add">添加</button>
+        <button type="button" class="btn btn-danger delete-all">删除</button>
+    </div>
+</div>
+<!--list-->
+<div id="list">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th style="width: 1%">#</th>
+            <th>编号</th>
+            <th>名称</th>
+            <th>教室</th>
+            <th>时段</th>
+            <th>学期</th>
+            <th style="width: 15%">编辑</th>
+        </tr>
+        </thead>
+        <tbody>
+
+
+        </tbody>
+    </table>
+    <div id="page">
+
+    </div>
+</div>
+
+
+<div id="add-info">
+    <div class="back btn">X</div>
+    <h3>添加课程信息</h3>
+    <form class="form-horizontal" method="post" action="http://123.206.114.104/course/add/room" onsubmit="">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">编号</label>
+            <div class="col-sm-3"><input type="text" class="form-control" name="coid" readonly></div>
+        </diV>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">课室</label>
+            <div class="col-sm-10"><input type="text" class="form-control" name="classroom"></div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">上课日期</label>
+            <div class="col-sm-2">周
+                <select class="input-sm" name="week">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">上课时段</label>
+            <div class="col-sm-4">
+                <select class="input-sm" name="start_time">
+                    <option>8:30</option>
+                    <option>10:30</option>
+                    <option>14:00</option>
+                    <option>16:00</option>
+                    <option>19:00</option>
+                    <option>21:00</option>
+                </select>
+                -
+                <select class="input-sm" name="end_time">
+                    <option>10:00</option>
+                    <option>12:00</option>
+                    <option>15:30</option>
+                    <option>17:30</option>
+                    <option>20:30</option>
+                    <option>22:30</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-3 col-sm-offset-5">
+                <input class="btn btn-info" type="reset" name="reset" value="重置">
+                <input class="btn btn-success" type="submit" name="submit" value="提交">
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="input-group" id="add">
+    <div class="back btn">X</div>
+    <h3>添加课程信息</h3>
+    <form class="form-horizontal" method="post" action="http://123.206.114.104/course/add/by_employee" onsubmit="">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">名称</label>
+            <div class="col-sm-10"><input type="text" class="form-control" class="name" name="name" placeholder="数学及统计1"></div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">学期</label>
+            <div class="col-sm-2">
+                <select class="input-sm" class="term" name="term">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-3 col-sm-offset-5">
+                <input class="btn btn-info" type="reset" name="reset" value="重置">
+                <input class="btn btn-success" type="submit" name="submit" value="提交">
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="../static/js/jquery.min.js" type="text/javascript"></script>
+<script src="../static/js/common.js" type="text/javascript"></script>
+<script src="../static/js/teacher/course.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Done!</title>
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body{
+            background-color: #F9F9F9;
+			color: #7A939C;
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            padding-top: 5%;
+        }
+        div{
+            margin: 10px 0;
+        }
+        a{
+            font-size: x-small;
+            text-decoration: none;
+            color: #FF3366;
+        }
+        a:hover{
+            text-decoration: none;
+            color: #FF9929;
+        }
+    </style>
+</head>
+<body>
+<h1>欢迎登陆XXXXXX大学</h1>
+<div class="form-horizontal col-lg-4 col-lg-offset-4">
+	<div class="col-sm-8 col-sm-offset-2">
+	<h3 class="col-sm-6 col-sm-offset-3">登录账号</h3>
+	</div>
+    <div class="form-group">
+		<div class="col-sm-8 col-sm-offset-2">
+			<input type="text" class="form-control" maxlength="12" id="num" name="num" placeholder="工号/学号"/>
+			<div class="error-tips"><div></div></div>
+		</div>
+    </div>
+    <div class="form-group">
+		<div class="col-sm-8 col-sm-offset-2">
+			<input type="password" class="form-control" maxlength="30" id="password" name="password" placeholder="密码"/>
+			<div class="error-tips"><div></div></div>
+			</div>
+    </div>
+    <div class="form-group">
+		<div class="col-sm-4 col-sm-offset-4">
+			<input type="submit" id="submit" class="btn btn-success" value="登陆">
+			<input type="reset" class="btn btn-info" value="重置">
+			<a href="">找回密码</a>
+		</div>
+    </div>
+</div>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/login.js"></script>
+</body>
+</html>

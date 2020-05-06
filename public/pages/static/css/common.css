@@ -1,0 +1,43 @@
+#edit, #add{
+	display: none;
+	z-index: 1000;
+	position: absolute;
+	border: solid 1px;
+	border-color: #ece3e3;
+	border-radius: 12px;
+	width: 50%;
+	top: 10%;
+	margin-left: 20%;
+	background-color: #FFFFFF;
+}
+
+#edit form, #add form{
+	width: 90%;
+}
+
+.back{
+	position: absolute;
+	right: 0;
+}
+
+textarea{
+	width:100%;
+}
+
+#page .count,#page .goto{
+	position: relative;
+	font-size: 16px;
+	bottom: 12px;
+	color: #606266;
+}
+
+#page ul{
+	margin: 0 18px;
+}
+
+#page .goto input{
+	width: 45px;
+	height: 33px;
+	display: inline;
+	text-align: center;
+}
